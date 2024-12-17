@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary to Decimal Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Binary to Decimal converter</h1>
+
+        <div class="input-group">
+            <label for="from">From</label>
+            <select id="from">
+                <option value="Binary">Binary</option>
+                <option value="Decimal">Decimal</option>
+                <option value="Octal">Octal</option>
+                <option value="Hexadecimal">Hexadecimal</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="to">To</label>
+            <select id="to">
+                <option value="Decimal">Decimal</option>
+              <option value="Binary">Binary</option>
+              <option value="Octal">Octal</option>
+              <option value="Hexadecimal">Hexadecimal</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="binary-input" id="input-no">Enter Binary Number</label>
+            <input type="text" id="input">
+        </div>
+
+        <div class="buttons">
+            <button class="convert-btn">= Convert</button>
+            <button class="reset-btn">x Reset</button>
+        </div>
+
+        <div class="input-group result">
+            <label for="decimal-output" id="output-no">Decimal Number</label>
+            <input type="text" id="output" readonly>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -3,53 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BaseX Convertor</title>
+    <title>Base Convertor</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="calculator.png" type="image/x-icon">
 </head>
 <body>
+    <div class="mainPage">
+        <header>
+            <div class="logo-container">
+              <img src="calculator.png" alt="Calculator Logo">
+              <h1>Base Convertor</h1>
+            </div>
+            <nav>
+              <a href="about.html">About</a>
+              <a href="information.html">Docs</a>
+              <a href="references.html">References</a>
+            </nav>
+          </header>
+          <div class="container">
+              <div class="heading">
+                  <img src="calculator.png" alt="Product_Logo">
+                  <h1>Base Convertor</h1>
+              </div>
+      
+              <div class="input-group">
+                  <label for="from">From</label>
+                  <select id="from">
+                      <option value="Binary">Binary</option>
+                      <option value="Decimal">Decimal</option>
+                      <option value="Octal">Octal</option>
+                      <option value="Hexadecimal">Hexadecimal</option>
+                  </select>
+              </div>
+      
+              <div class="input-group">
+                  <label for="to">To</label>
+                  <select id="to">
+                      <option value="Decimal">Decimal</option>
+                    <option value="Binary">Binary</option>
+                    <option value="Octal">Octal</option>
+                    <option value="Hexadecimal">Hexadecimal</option>
+                  </select>
+              </div>
+      
+              <div class="input-group">
+                  <label for="binary-input" id="input-no">Enter Binary Number</label>
+                  <input type="text" id="input">
+              </div>
+      
+              <div class="buttons">
+                  <button class="convert-btn">= Convert</button>
+                  <button class="reset-btn">x Reset</button>
+              </div>
+      
+              <div class="input-group result">
+                  <label for="decimal-output" id="output-no">Decimal Number</label>
+                  <input type="text" id="output" readonly>
+              </div>
+          </div>
 
-    <div class="container">
-        <div class="heading">
-            <img src="calculator.png" alt="Product_Logo">
-            <h1>BaseX Convertor</h1>
-        </div>
 
-        <div class="input-group">
-            <label for="from">From</label>
-            <select id="from">
-                <option value="Binary">Binary</option>
-                <option value="Decimal">Decimal</option>
-                <option value="Octal">Octal</option>
-                <option value="Hexadecimal">Hexadecimal</option>
-            </select>
-        </div>
-
-        <div class="input-group">
-            <label for="to">To</label>
-            <select id="to">
-                <option value="Decimal">Decimal</option>
-              <option value="Binary">Binary</option>
-              <option value="Octal">Octal</option>
-              <option value="Hexadecimal">Hexadecimal</option>
-            </select>
-        </div>
-
-        <div class="input-group">
-            <label for="binary-input" id="input-no">Enter Binary Number</label>
-            <input type="text" id="input">
-        </div>
-
-        <div class="buttons">
-            <button class="convert-btn">= Convert</button>
-            <button class="reset-btn">x Reset</button>
-        </div>
-
-        <div class="input-group result">
-            <label for="decimal-output" id="output-no">Decimal Number</label>
-            <input type="text" id="output" readonly>
-        </div>
     </div>
+      
+
     <script src="script.js"></script>
 </body>
 </html>

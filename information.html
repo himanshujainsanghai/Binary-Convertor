@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information - Base Convertor</title>
+  <link rel="stylesheet" href="information.css">
+  <link rel="icon" href="calculator.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>How it Works</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Understanding Number Systems</h2>
+      <p>Number systems are the foundation of digital computation. The most common number systems include:</p>
+      <ul>
+        <li><strong>Binary (Base-2):</strong> Uses two digits: 0 and 1. Widely used in computers and digital systems.</li>
+        <li><strong>Decimal (Base-10):</strong> The standard number system used in everyday life, consisting of digits from 0 to 9.</li>
+        <li><strong>Octal (Base-8):</strong> Uses digits 0 to 7. Often used in early computing systems.</li>
+        <li><strong>Hexadecimal (Base-16):</strong> Uses digits 0 to 9 and letters A to F, representing values 10 to 15. Common in programming and memory addressing.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Conversion Methods and Formulas</h2>
+      <article>
+        <h3>Binary to Decimal</h3>
+        <p>Formula: <code>D = Σ(b<sub>i</sub> × 2<sup>i</sup>)</code></p>
+        <p>Each binary digit is multiplied by 2 raised to the power of its position (from right, starting at 0), and the results are summed.</p>
+        <p><strong>Example:</strong> Binary <code>1011</code> = <code>1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 11</code></p>
+      </article>
+
+      <article>
+        <h3>Decimal to Binary</h3>
+        <p>To convert decimal to binary:</p>
+        <ol>
+          <li>Divide the decimal number by 2 and record the remainder.</li>
+          <li>Repeat the process with the quotient until the quotient is 0.</li>
+          <li>The binary number is the sequence of remainders read in reverse order.</li>
+        </ol>
+        <p><strong>Example:</strong> Decimal <code>11</code> → Remainders: <code>1, 1, 0, 1</code> → Binary: <code>1011</code></p>
+      </article>
+
+      <article>
+        <h3>Hexadecimal to Decimal</h3>
+        <p>Formula: <code>D = Σ(h<sub>i</sub> × 16<sup>i</sup>)</code></p>
+        <p>Each hexadecimal digit is multiplied by 16 raised to the power of its position, and the results are summed.</p>
+        <p><strong>Example:</strong> Hexadecimal <code>1A3</code> = <code>1×16² + 10×16¹ + 3×16⁰ = 419</code></p>
+        <p>Here, <code>A = 10</code> in decimal.</p>
+      </article>
+
+      <article>
+        <h3>Decimal to Hexadecimal</h3>
+        <p>To convert decimal to hexadecimal:</p>
+        <ol>
+          <li>Divide the decimal number by 16 and record the remainder.</li>
+          <li>Repeat the process with the quotient until the quotient is 0.</li>
+          <li>The hexadecimal number is the sequence of remainders (convert numbers 10–15 to A–F).</li>
+        </ol>
+        <p><strong>Example:</strong> Decimal <code>419</code> → Remainders: <code>3, 10 (A), 1</code> → Hexadecimal: <code>1A3</code></p>
+      </article>
+
+      <article>
+        <h3>Octal to Decimal</h3>
+        <p>Formula: <code>D = Σ(o<sub>i</sub> × 8<sup>i</sup>)</code></p>
+        <p>Each octal digit is multiplied by 8 raised to the power of its position, and the results are summed.</p>
+        <p><strong>Example:</strong> Octal <code>17</code> = <code>1×8¹ + 7×8⁰ = 15</code></p>
+      </article>
+
+      <article>
+        <h3>Binary to Hexadecimal</h3>
+        <p>Group the binary number into sets of 4 bits (starting from the right). Each group corresponds to a single hexadecimal digit.</p>
+        <p><strong>Example:</strong> Binary <code>101011</code> → Groups: <code>10 (2), 1011 (B)</code> → Hexadecimal: <code>2B</code></p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Applications of Number Systems</h2>
+      <ul>
+        <li><strong>Binary:</strong> Used in computer systems, logic gates, and digital circuits.</li>
+        <li><strong>Decimal:</strong> The universal system for human-centric computations and financial transactions.</li>
+        <li><strong>Octal:</strong> Used in file permissions in Unix/Linux systems.</li>
+        <li><strong>Hexadecimal:</strong> Common in low-level programming, memory addressing, and color codes in web development.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Common Challenges in Conversion</h2>
+      <p>Understanding and performing conversions can be challenging due to:</p>
+      <ul>
+        <li>Handling large binary numbers.</li>
+        <li>Converting fractional parts between systems.</li>
+        <li>Understanding base representation for uncommon systems (e.g., Base-7).</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

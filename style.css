@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,30 +12,18 @@ body {
   background-color: #292929;
   width: 100vw;
   height: 100vh;
-  color: #e0e0e0; /* Light text color for readability */
+  color: #e0e0e0;
 }
-
-/* .container {
-  width: 400px;
-  height: 70%;
-  padding: 20px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, rgba(33, 33, 33, 0.8), rgba(45, 45, 45, 0.8));
-  box-shadow: 0 10px 30px rgba(31, 38, 135, 0.2);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-} */
 
 .container {
   width: 400px;
   height: 70%;
   padding: 20px;
   border-radius: 12px;
-  background: #171717; /* Semi-transparent background */
-  /* background: rgba(0, 0, 0, 0.3);  */
-  backdrop-filter: blur(12px); /* Apply blur effect to the background */
-  -webkit-backdrop-filter: blur(12px); /* Safari support */
-  box-shadow: 0 10px 30px rgba(31, 38, 135, 0.2); /* Soft shadow to enhance glass look */
+  background: #171717; 
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px); 
+  box-shadow: 0 10px 30px rgba(31, 38, 135, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.18); 
 }
 
@@ -44,7 +32,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid red; */
   margin-top: 1rem;
   margin-bottom: 2rem;
   gap: 1rem;
@@ -66,7 +53,7 @@ h1 {
 label {
   display: block;
   margin-bottom: 5px;
-  color: #dcdcdc; /* Slightly dimmed text color */
+  color: #dcdcdc; 
 }
 
 select,
@@ -130,4 +117,233 @@ button:focus {
     width: 90%;
     height: auto;
   }
+} */
+
+
+
+
+/* Main Page Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #292929;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+/* Header Styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width header */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1); /* Glassy background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  backdrop-filter: blur(8px); /* Glassy effect */
+  z-index: 10;
+  text-overflow: ellipsis;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+
+}
+
+.logo-container img {
+  width: 50px; /* Logo size */
+  height: 50px;
+  margin-right: 1rem; /* Space between logo and title */
+}
+@media (min-width: 600px) {
+  header {
+    flex-direction: row; /* Align items horizontally */
+    justify-content: space-between; /* Spread logo and nav */
+    padding: 1rem 2rem;
+  }
+
+  .logo-container {
+    margin-bottom: 0; /* Remove space for larger screens */
+  }
+
+  nav {
+    justify-content: flex-end; /* Align links to the right */
+    gap: 1.5rem; /* Increased spacing */
+  }
+
+  nav a {
+    font-size: 1rem; /* Slightly larger text for desktop */
+  }
+}
+.logo-container h1 {
+  font-size: 1.5rem;/* Title color */
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem; /* Space between links */
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #76c7c0; /* Highlight color on hover */
+  text-decoration: underline;
+}
+
+/* Container Styling */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the container */
+  /* margin-top: 5rem; */
+  width: 400px;
+  height: 570px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #171717; 
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px); 
+  box-shadow: 0 10px 30px rgba(31, 38, 135, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18); 
+}
+
+/* Heading Styling */
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.heading img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.heading h1 {
+  font-size: 1.8em;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Input Group Styling */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #dcdcdc; 
+}
+
+/* .input-group select,
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+} */
+select,
+input[type="text"] {
+  width: calc(100% - 12px);
+  padding: 10px;
+  border: 1px solid #555555;
+  border-radius: 6px;
+  background-color: #333333;
+  color: #e0e0e0;
+  font-size: 1em;
+}
+
+/* .input-group input:focus,
+.input-group select:focus {
+  outline: 2px solid #76c7c0; 
+} */
+ 
+select:focus, input[type="text"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Buttons Styling */
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0.8rem;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.convert-btn,
+.reset-btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.convert-btn {
+  background: #4CAF50;
+  color: #121212;
+}
+
+.reset-btn {
+  background: #ff6f61;
+  color: #121212;
+}
+
+.convert-btn:hover {
+  background:#98f29d;
+  transform: scale(1.05);
+}
+
+.reset-btn:hover {
+  background: #f27b72;
+  transform: scale(1.05);
+}
+
+/* Result Styling */
+.result input {
+  background: rgba(255, 255, 255, 0.2); 
+  font-weight: bold;
+  color:white;
+}
+
